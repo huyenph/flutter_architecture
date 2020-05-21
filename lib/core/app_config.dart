@@ -9,9 +9,9 @@ class FlavorValues {
 }
 
 class AppConfig {
-  static const String DEV_URL = "https://dev.com/";
-  static const String STAG_URL = "https://stag.com/";
-  static const String PROD_URL = "https://prod.com/";
+  static const String DEV_URL = "https://api.stackexchange.com/2.2/";
+  static const String STAG_URL = "https://api.stackexchange.com/2.2/";
+  static const String PROD_URL = "https://api.stackexchange.com/2.2/";
 
   static AppConfig _instance;
 

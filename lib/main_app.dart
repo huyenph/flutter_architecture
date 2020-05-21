@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutterarchitecture/core/route_generator.dart';
+import 'package:flutterarchitecture/views/pages/home_page.dart';
 
 class MainApp extends StatelessWidget {
   @override
@@ -14,7 +15,8 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       onGenerateRoute: RouteGenerator.generateRoute,
-      home: Container(),
+      home: HomePage(
+      ),
     );
   }
 }
