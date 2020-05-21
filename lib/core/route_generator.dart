@@ -1,12 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterarchitecture/views/pages/second_page.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     final args = settings.arguments;
     switch (settings.name) {
-      case '':
-        return CupertinoPageRoute(builder: (_) => Container());
+      case 'a':
+        return CupertinoPageRoute(builder: (_) => SecondPage());
       default:
         return _errorRoute();
     }

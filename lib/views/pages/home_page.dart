@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterarchitecture/domain/usecases/question_usecase.dart';
+import 'package:flutterarchitecture/views/base/base_state.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -7,7 +8,7 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends BaseState<HomePage> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -16,7 +17,17 @@ class _HomePageState extends State<HomePage> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Container();
+  Widget buildBody() {
+    return Center(
+      child: FlatButton(
+        onPressed: () => Navigator.pushNamed(context, 'a'),
+        child: Text('click me'),
+      ),
+    );
+  }
+
+  @override
+  void onShowLoading(String text) {
+    // TODO: implement onShowLoading
   }
 }

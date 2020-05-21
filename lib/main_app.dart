@@ -12,11 +12,14 @@ class MainApp extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
     return CupertinoApp(
+      localizationsDelegates: [
+        DefaultMaterialLocalizations.delegate,
+        DefaultWidgetsLocalizations.delegate,
+      ],
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       onGenerateRoute: RouteGenerator.generateRoute,
-      home: HomePage(
-      ),
+      home: HomePage(),
     );
   }
 }
