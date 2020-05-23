@@ -50,8 +50,9 @@ abstract class BaseState<T extends StatefulWidget> extends State<T>
     );
   }
 
-//  @override
-//  void onShowLoading(String text) async {
+  @override
+  void onShowLoading(String text) async {
+    return null;
 //    if (!_isLoading) {
 //      _isLoading = true;
 //      await showDialog(
@@ -80,7 +81,7 @@ abstract class BaseState<T extends StatefulWidget> extends State<T>
 //        },
 //      );
 //    }
-//  }
+  }
 
   @override
   void onDismissLoading() {
@@ -110,9 +111,7 @@ abstract class BaseState<T extends StatefulWidget> extends State<T>
 
 //  GlobalKey<ScaffoldState> scaffoldKey();
 
-  Widget buildAppBar() => AppBar(
-        title: Text('AppBar'),
-      );
+  Widget buildAppBar() => null;
 
   Widget buildDrawer() => null;
 
