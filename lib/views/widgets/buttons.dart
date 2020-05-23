@@ -107,7 +107,7 @@ class MFlatButton extends StatelessWidget {
             color: textColor ?? appColors.white,
             fontSize: textSize ?? SizeConfig.instance.safeBlockHorizontal * 5,
           ),
-        ),
+        ),  
       ),
       onPressed: onPressed,
     );
